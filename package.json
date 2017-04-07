@@ -1,0 +1,22 @@
+{
+  "name": "typescript-basico-2017",
+  "version": "1.0.0",
+  "description": "Un repositorio para aprender los conceptos básicos de TypeScript",
+  "main": "index.js",
+  "dependencies": { },
+  "devDependencies": { },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/webtrainingmx/typescript-basico-2017.git"
+  },
+  "author": "Alex Arriaga",
+  "license": "UNLICENSED",
+  "private": true,
+  "bugs": {
+    "url": "https://github.com/webtrainingmx/typescript-basico-2017/issues"
+  },
+  "homepage": "https://github.com/webtrainingmx/typescript-basico-2017#readme"
+}
