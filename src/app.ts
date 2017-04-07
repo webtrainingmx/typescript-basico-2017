@@ -1,13 +1,28 @@
-class Estudiante {
+import { Estudiante } from "./estudiante";
 
-	nombre;
-	apellidoPaterno;
-	apellidoMaterno;
+export class App {
 
-	constructor( nombre, apellidoPaterno, apellidoMaterno ) {
-		this.nombre = nombre;
-		this.apellidoPaterno = apellidoPaterno;
-		this.apellidoMaterno = apellidoMaterno;
+	estudiantes:Array<Estudiante> = [];
+
+	constructor() {
+		this.agregarEstudiante( new Estudiante( "Bruce", "Wayne" ) );
+		this.agregarEstudiante( new Estudiante( "Clark", "Kent" ) );
+
+		this.listarEstudiantes();
+	}
+
+	agregarEstudiante( estudiante:Estudiante ) {
+		this.estudiantes.push( estudiante );
+	}
+
+	eliminarEstudiante( estudiante:Estudiante ) {
+
+	}
+
+	listarEstudiantes() {
+		this.estudiantes.forEach( function( estudiante ) {
+			console.log( estudiante );
+		} );
 	}
 
 }
