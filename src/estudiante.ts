@@ -1,13 +1,9 @@
-export class Estudiante {
+import { Persona } from "./persona";
 
-	nombre:string;
-	apellidoPaterno:string;
-	apellidoMaterno:string;
+export class Estudiante implements Persona {
 
-	constructor( nombre:string, apellidoPaterno:string, apellidoMaterno?:string ) {
-		this.nombre = nombre;
-		this.apellidoPaterno = apellidoPaterno;
-		this.apellidoMaterno = apellidoMaterno;
+	constructor( public nombre:string, public apellidoPaterno:string, public apellidoMaterno?:string ) {
+
 	}
 
 }
