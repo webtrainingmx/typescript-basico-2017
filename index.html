@@ -3,16 +3,28 @@
     <head>
         <meta charset="utf-8">
         <title>App Estudiantes</title>
-        <link rel="stylesheet" href="css/style.css">
         <!--[if IE]>
         <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
         <![endif]-->
     </head>
 
     <body>
-
         <h1>App Estudiantes</h1>
+        <script src="https://unpkg.com/systemjs@0.20.12/dist/system.js"></script>
+        <script>
+			// Configuramos nuestro paquete "dist"
+			System.config( {
+				packages: {
+					"dist": {
+						"defaultExtension": "js",
+						"main": "app"
+					}
+				}
+			} );
 
+			// Arrancar con el paquete "dist"
+			System.import( "dist" );
+        </script>
     </body>
 </html>
 
